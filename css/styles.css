@@ -232,6 +232,7 @@ p {
   left: 50%;
   width: 528px;
   height: 581px;
+  padding: 40px;
 
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -255,12 +256,18 @@ p {
   width: 30px;
   padding: 6px;
   border: none;
+  cursor: pointer;
 }
+
 .close-icon {
   height: 18px;
   width: 18px;
   border-radius: 50%;
   color: currentColor;
+}
+.close-button:hover,
+.close-button:focus {
+  color: var(--accent-color);
 }
 
 .title-hero {
@@ -601,6 +608,63 @@ p {
   text-decoration: none;
 }
 
+.mail-form-container {
+  margin-left: 93px;
+  width: 576px;
+  height: 86px;
+  margin-top: 12px;
+}
+.mail-form {
+  display: flex;
+}
+.mail-form input {
+  margin-top: 20px;
+  padding: 15px;
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.submit-text {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.submit-button {
+  display: inline-block;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  padding: 10px 29px;
+  min-width: 200px;
+  height: 50px;
+  margin-left: 12px;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.telegram-icon {
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+  margin-left: 10px;
+}
+
 /* Portfolio page */
 /* Buttons */
 
@@ -767,6 +831,8 @@ p {
   background-color: var(--button-primary-color);
 }
 .section.hero {
+  margin: 0 auto;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
@@ -791,4 +857,65 @@ p {
 
 .icon-container {
   display: flex;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! MODAL WINDOW FORM!!!!!!!!!!!!!!!!!!!!!!! */
+
+.policy-link {
+  color: var(--accent-color);
+}
+.modal-submit-button {
+  display: inline-block;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 10px 55px;
+
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.modal-title {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--title-text-color);
+  text-align: center;
+}
+.form-field input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 14px;
+}
+.form-field textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.form-field label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.form-field {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  top: 35px;
+  left: 14px;
+  width: 14px;
+  height: 14px;
+  fill: red;
 }
