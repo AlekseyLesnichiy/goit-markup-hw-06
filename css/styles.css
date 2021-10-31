@@ -920,11 +920,11 @@ p {
   margin-bottom: 30px;
   margin-left: 11px;
   margin-right: 11px;
+  display: flex;
+  align-items: center;
 }
 .label-policy {
   display: inline-block;
-  display: flex;
-  align-items: center;
   font-size: 14px;
   line-height: 1.71;
 }
