@@ -452,38 +452,41 @@
                <b class="modal-title"> Оставьте свои данные, мы вам перезвоним</b>
                 <form>
                     <div class="form-field">
-                        <label for="name">Имя</label>
-                        <input class="name" type="text" name="name" id="name" autocomplete="off">
+                        <label class="label-name" for="name">Имя</label>
+                        <input class="input-name" type="text" name="name" id="name" autocomplete="off">
+                        <div class="image-input">
                         <svg class="input-icon">
-                            <use href="./images/form_name.svg" ></use>
+                            <use href="./images/sprite.svg#form_name" ></use>
                         </svg>
                     </div>
-                   
+                    </div>
                     <div class="form-field">
-                        <label for="tel">Телефон</label>
-                        <input type="tel" name="tel" id="tel">
+                        <label class="label-tel" for="tel">Телефон</label>
+                        <input class="input-tel"  type="tel" name="tel" id="tel">
+                        <div class="image-input">
                         <svg class="input-icon">
-                            <use href="./images/form_phone.svg"></use>
+                            <use href="./images/sprite.svg#form_phone"></use>
                         </svg>
                     </div>
-
+                    </div>
                    <div class="form-field">
-                        <label for="mail">Почта</label>
-                        <input type="email" name="mail" id="mail">
+                        <label class="label-mail"  for="mail">Почта</label>
+                        <input class="input-mail"  type="email" name="mail" id="mail">
+                        <div class="image-input">
                             <svg class="input-icon">
-                                <use href="./images/sprite.svg#antenna"></use>
+                                <use href="./images/sprite.svg#form_mail"></use>
                             </svg>
-                   </div>
-               
+                    </div>
+                    </div>
                    <div class="form-field">
-                            <label for="comment">Комментарий</label>
-                            <textarea name="comment" id="comment" placeholder="Введите текст"> </textarea>
+                            <label class="label-comment"  for="comment">Комментарий</label>
+                            <textarea class="comment" name="comment" id="comment" placeholder="Введите текст" > </textarea>
                    </div>
                   
-                   <div class="form-field">
-                        <input type="checkbox" name="policy" id="policy">
-                        <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия договора</a> </label>
-
+                   <div class="form-field policy ">
+                        <input class="input-checkbox"  type="checkbox" name="policy" id="policy">
+                        <label class="label-policy" for="policy"> <span class="check-icon"> </span> Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия договора</a>
+                         </label>
                    </div>
                     <button type="submit" class="modal-submit-button">Отправить</button>
                 </form>
