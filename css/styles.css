@@ -815,7 +815,6 @@ p {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid tomato; */
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -892,7 +891,7 @@ p {
 .modal-title {
   width: 100%;
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.15;
   font-weight: 700;
@@ -923,15 +922,17 @@ p {
 }
 .form-field.policy {
   margin-bottom: 30px;
-  margin-left: 11px;
-  margin-right: 11px;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .label-policy {
   display: inline-block;
+  display: flex;
+
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  align-items: center;
 }
 .label-name,
 .label-mail,
@@ -969,8 +970,14 @@ p {
   color: var(--accent-color);
 }
 .input-checkbox {
-  appearance: none;
   position: absolute;
+  width: 1 px;
+  height: 1 px;
+  margin: -1 px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .check-icon {
